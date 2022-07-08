@@ -1,0 +1,1175 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/28/2022 2:45:00 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-81OJ9UH"
+  DTS:CreatorName="DESKTOP-81OJ9UH\userTK427"
+  DTS:DTSID="{5AA3C56F-CEBF-49CE-A375-76199900194F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{3921A01D-9D6D-417C-AF1B-A64127176C44}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7AEECE7F-7CA5-41CB-83D2-4BFDB19660B7}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\userTK427\Desktop\Studying\SQL\Project 1 Build Automated Daily Report\PaymentNumbers_20200526.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{4BF5BEC1-2B80-400E-8E5C-8957E7024292}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Measure 1"
+              DTS:DTSID="{96F3E1F5-0FC8-4CF3-824D-2C283225F81C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Measure 2"
+              DTS:DTSID="{5F117BBA-C16B-42BD-A58C-08FD3414AE58}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number Less"
+              DTS:DTSID="{491CEFC0-2117-4A77-8D4C-E0604A97AB6D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number Same"
+              DTS:DTSID="{EE493BA5-56C7-4A8B-AAEE-FE4550E8BAFE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number More"
+              DTS:DTSID="{ECBF89E7-C6DA-43F8-A9E4-E68E9DC1C8E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number X"
+              DTS:DTSID="{4175358B-F5D0-4D1D-92FF-1881090A89F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Footnote"
+              DTS:DTSID="{CE34F07C-D1AE-41C5-92E2-F7ED4BE1EA65}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Start Date"
+              DTS:DTSID="{62CBF321-F1B3-4050-B3AF-E28294F5481D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="End Date"
+              DTS:DTSID="{1507D2E3-F508-4100-BF36-29F3CED72C8E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PaymentNumbers]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C059D0AE-1A98-4965-ABD5-DADD8A335EB6}"
+      DTS:ObjectName="PaymentNumbers">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::SFConnectionString]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\userTK427\Desktop\Studying\SQL\Project 1 Build Automated Daily Report\PaymentNumbers_20220529.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{460DAE8A-F5B5-45D5-AED1-1CF94D7B1007}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Measure 1"
+              DTS:DTSID="{28899F16-95EB-496D-82BC-862509C99DE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Measure 2"
+              DTS:DTSID="{E1AA72E0-996D-49DC-9B71-B3F0CB1B6C6A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number Less"
+              DTS:DTSID="{41B2DD4C-CD8D-46BD-A329-FF6BAE813A99}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number Same"
+              DTS:DTSID="{CE6E1951-C8EE-46CC-9F8E-E71E1E200191}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number More"
+              DTS:DTSID="{3B6CF7CF-6454-4019-8E53-7D82F2BF2692}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number X"
+              DTS:DTSID="{4316C94F-D493-4A8D-834F-3D3EC275CA90}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Footnote"
+              DTS:DTSID="{4E56FEC2-E55C-4ACC-BDD5-A1FE078A0B7F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Start Date"
+              DTS:DTSID="{0B6BE4F5-D507-4591-8F2A-49346C1F1F08}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="End Date"
+              DTS:DTSID="{AF9175A1-C405-42FF-A013-DE7F9593CEAC}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[StatePaymentSummaryView]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E848E7C2-049F-4A0D-A2FF-B97C9475C34A}"
+      DTS:ObjectName="StatePaymentSummaryView">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::TFConnectionString]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\userTK427\Desktop\Studying\SQL\Project 1 Build Automated Daily Report\Target\StatePaymentSummaryView_20220529.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State"
+              DTS:DTSID="{13B539D5-7953-4610-A46E-01EE40336EBA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Total Number Less"
+              DTS:DTSID="{9EA0BA0E-2E05-409F-8A8A-9264B0005812}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Total DRD_NS"
+              DTS:DTSID="{C4D8F13B-F3ED-44CC-A649-CF1DC86D4849}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E339F9FB-FC25-4800-8B37-1B278C7D71F3}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="(DT_STR,4,1252)  Year(getdate()) + &quot;0&quot; + RIGHT((DT_STR,4,1252)  Month(getdate()) ,2) + RIGHT((DT_STR,4,1252)  Day(getdate()) ,2)"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Datepart">
+      <DTS:VariableValue
+        DTS:DataType="8">20220529</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{761756E8-0994-44D5-8F8E-8BDF0ED02BE5}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\userTK427\Desktop\Studying\SQL\Project 1 Build Automated Daily Report\PaymentNumbers_YYYYMMDD.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B889FA2C-73F8-4826-9ECE-8B1C39F0A6E6}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="REPLACE(@[User::FilePath],&quot;YYYYMMDD&quot;, @[User::Datepart])"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SFConnectionString">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\userTK427\Desktop\Studying\SQL\Project 1 Build Automated Daily Report\PaymentNumbers_20220529.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9E59BDFA-EC88-4A0F-A5C4-96374B048F59}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TargetPath">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\userTK427\Desktop\Studying\SQL\Project 1 Build Automated Daily Report\Target\StatePaymentSummaryView_YYYYMMDD.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{AB4B56FC-0B0A-429A-9B63-80AC94034B42}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="replace(@[User::TargetPath],&quot;YYYYMMDD&quot;,@[User::Datepart])"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TFConnectionString">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\userTK427\Desktop\Studying\SQL\Project 1 Build Automated Daily Report\Target\StatePaymentSummaryView_20220529.txt</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Report Generate - StatePaymentSummary"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4C806A7F-FFB7-4304-9DFE-B454E94D8420}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Report Generate - StatePaymentSummary"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Report Generate - StatePaymentSummary\Aggregate"
+              componentClassID="Microsoft.Aggregate"
+              contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
+              name="Aggregate"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                  name="KeyScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                  name="Keys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
+                  name="CountDistinctScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
+                  name="CountDistinctKeys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
+                  name="AutoExtendFactor">25</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Report Generate - StatePaymentSummary\Aggregate.Inputs[Aggregate Input 1]"
+                  name="Aggregate Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Aggregate.Inputs[Aggregate Input 1].Columns[state]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="state"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[state]" />
+                    <inputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Aggregate.Inputs[Aggregate Input 1].Columns[Number Less]"
+                      cachedDataType="i4"
+                      cachedName="Number Less"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Number Less]" />
+                    <inputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Aggregate.Inputs[Aggregate Input 1].Columns[DRD_NS]"
+                      cachedDataType="i4"
+                      cachedName="DRD_NS"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Derived Column.Outputs[Derived Column Output].Columns[DRD_NS]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Report Generate - StatePaymentSummary\Aggregate.Outputs[Aggregate Output 1]"
+                  name="Aggregate Output 1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Aggregate.Outputs[Aggregate Output 1].Columns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Aggregate.Outputs[Aggregate Output 1].Columns[state]"
+                      name="state">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[state]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Aggregate.Outputs[Aggregate Output 1].Columns[Number Less]"
+                      dataType="i8"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Aggregate.Outputs[Aggregate Output 1].Columns[Number Less]"
+                      name="Number Less">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Number Less]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">4</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Aggregate.Outputs[Aggregate Output 1].Columns[DRD_NS]"
+                      dataType="i8"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Aggregate.Outputs[Aggregate Output 1].Columns[DRD_NS]"
+                      name="DRD_NS">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Report Generate - StatePaymentSummary\Derived Column.Outputs[Derived Column Output].Columns[DRD_NS]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">4</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Report Generate - StatePaymentSummary\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Report Generate - StatePaymentSummary\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Derived Column.Inputs[Derived Column Input].Columns[Number Same]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Number Same"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Number Same]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Report Generate - StatePaymentSummary\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Report Generate - StatePaymentSummary\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Derived Column.Outputs[Derived Column Output].Columns[DRD_NS]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Derived Column.Outputs[Derived Column Output].Columns[DRD_NS]"
+                      name="DRD_NS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)[REPLACENULL](#{Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Number Same]},"")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)REPLACENULL([Number Same],"")</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Report Generate - StatePaymentSummary\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Report Generate - StatePaymentSummary\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Report Generate - StatePaymentSummary\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Report Generate - StatePaymentSummary\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[StatePaymentSummaryView]"
+                  connectionManagerRefId="Package.ConnectionManagers[StatePaymentSummaryView]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Report Generate - StatePaymentSummary\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Destination.Inputs[Flat File Destination Input].Columns[state]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="state"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[State]"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Aggregate.Outputs[Aggregate Output 1].Columns[state]" />
+                    <inputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Destination.Inputs[Flat File Destination Input].Columns[Number Less]"
+                      cachedDataType="i8"
+                      cachedName="Number Less"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Total Number Less]"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Aggregate.Outputs[Aggregate Output 1].Columns[Number Less]" />
+                    <inputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Destination.Inputs[Flat File Destination Input].Columns[DRD_NS]"
+                      cachedDataType="i8"
+                      cachedName="DRD_NS"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Total DRD_NS]"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Aggregate.Outputs[Aggregate Output 1].Columns[DRD_NS]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Total Number Less]"
+                      dataType="i8"
+                      name="Total Number Less" />
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Total DRD_NS]"
+                      dataType="i8"
+                      name="Total DRD_NS" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Report Generate - StatePaymentSummary\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      length="50"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
+                      name="state"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Measure 1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Measure 1]"
+                      length="50"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Measure 1]"
+                      name="Measure 1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Measure 2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Measure 2]"
+                      length="50"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Measure 2]"
+                      name="Measure 2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Number Less]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Number Less]"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Number Less]"
+                      name="Number Less"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Number Same]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Number Same]"
+                      length="50"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Number Same]"
+                      name="Number Same"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Number More]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Number More]"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Number More]"
+                      name="Number More"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Number X]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Number X]"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Number X]"
+                      name="Number X"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Footnote]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Footnote]"
+                      length="50"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Footnote]"
+                      name="Footnote"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Start Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start Date]"
+                      length="50"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[Start Date]"
+                      name="Start Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[End Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[End Date]"
+                      length="50"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].Columns[End Date]"
+                      name="End Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="state" />
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Measure 1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Measure 1" />
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Measure 2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Measure 2" />
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Number Less]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Number Less" />
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Number Same]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Number Same" />
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Number More]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Number More" />
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Number X]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Number X" />
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Footnote]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Footnote" />
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Start Date" />
+                    <externalMetadataColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[End Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="End Date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Report Generate - StatePaymentSummary.Paths[Aggregate Output 1]"
+              endId="Package\Report Generate - StatePaymentSummary\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Aggregate Output 1"
+              startId="Package\Report Generate - StatePaymentSummary\Aggregate.Outputs[Aggregate Output 1]" />
+            <path
+              refId="Package\Report Generate - StatePaymentSummary.Paths[Derived Column Output]"
+              endId="Package\Report Generate - StatePaymentSummary\Aggregate.Inputs[Aggregate Input 1]"
+              name="Derived Column Output"
+              startId="Package\Report Generate - StatePaymentSummary\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Report Generate - StatePaymentSummary.Paths[Flat File Source Output]"
+              endId="Package\Report Generate - StatePaymentSummary\Derived Column.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\Report Generate - StatePaymentSummary\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="286,42"
+          Id="Package\Report Generate - StatePaymentSummary"
+          TopLeft="176,94" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Report Generate - StatePaymentSummary">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Report Generate - StatePaymentSummary\Flat File Destination"
+          TopLeft="337,413" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Report Generate - StatePaymentSummary\Flat File Source"
+          TopLeft="293,24" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Report Generate - StatePaymentSummary\Derived Column"
+          TopLeft="358,185" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Report Generate - StatePaymentSummary\Aggregate"
+          TopLeft="187,306" />
+        <EdgeLayout
+          Id="Package\Report Generate - StatePaymentSummary.Paths[Flat File Source Output]"
+          TopLeft="371,66">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="66,119"
+              Start="0,0"
+              End="66,111.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,55.5"
+                    Point2="0,59.5"
+                    Point3="4,59.5" />
+                  <mssgle:LineSegment
+                    End="62,59.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="62,59.5"
+                    Point2="66,59.5"
+                    Point3="66,63.5" />
+                  <mssgle:LineSegment
+                    End="66,111.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Report Generate - StatePaymentSummary.Paths[Derived Column Output]"
+          TopLeft="437,227">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-185,79"
+              Start="0,0"
+              End="-185,71.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.5"
+                    Point2="0,39.5"
+                    Point3="-4,39.5" />
+                  <mssgle:LineSegment
+                    End="-181,39.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-181,39.5"
+                    Point2="-185,39.5"
+                    Point3="-185,43.5" />
+                  <mssgle:LineSegment
+                    End="-185,71.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Report Generate - StatePaymentSummary.Paths[Aggregate Output 1]"
+          TopLeft="252,348">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="173,65"
+              Start="0,0"
+              End="173,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.5"
+                    Point2="0,32.5"
+                    Point3="4,32.5" />
+                  <mssgle:LineSegment
+                    End="169,32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="169,32.5"
+                    Point2="173,32.5"
+                    Point3="173,36.5" />
+                  <mssgle:LineSegment
+                    End="173,57.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

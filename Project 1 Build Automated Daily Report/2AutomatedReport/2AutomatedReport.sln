@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "2AutomatedReport", "2AutomatedReport.dtproj", "{0166CDC6-EF9E-41C1-9EC0-D4800D360D39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0166CDC6-EF9E-41C1-9EC0-D4800D360D39}.Development|Default.ActiveCfg = Development
+		{0166CDC6-EF9E-41C1-9EC0-D4800D360D39}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1518D7C1-B6BD-48D8-A9EB-1C1B7D26086F}
+	EndGlobalSection
+EndGlobal

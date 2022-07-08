@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectInfo>
+    <Name>1AutomatedReport</Name>
+    <LastWriteTime>2022-05-29T18:26:54.0198175Z</LastWriteTime>
+    <LastKnownProtectionLevel>EncryptSensitiveWithPassword</LastKnownProtectionLevel>
+    <Salt>wqOg4Onm</Salt>
+    <LastKnownProtectedHashedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkkruZCz6hECybShdrR59EwAAAAACAAAAAAAQZgAAAAEAACAAAADyEpBJVntbMktS1L8oH/634i9JDxWmBjnjgMYzbeTMjwAAAAAOgAAAAAIAACAAAABCl1ipQ5knPO88oaXebodCyrjqQV+ogACSb/hLaTzpNzAAAAAh9z9b22Uek86FRGNvWEdZFVQuvWkF6esCBRR2tGWGBd6CTZmfr4MWdGh9A/w0ULpAAAAAFqTzOyCHhhQ3AOKeI9COF3PCSIYzKUWH2c/lpUkRDUbdkm29Wemq9Nlt2ovyVjdu57JZsa0U3LIOAry6X4GiOQ==</LastKnownProtectedHashedPassword>
+  </ProjectInfo>
+  <LastBuildInfos>
+    <ProjectBuildItemInfo>
+      <Name>StatePaymentSummaryReport.dtsx</Name>
+      <LastWriteTime>2022-05-29T17:44:30.7769528Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+  </LastBuildInfos>
+</BuildLog>
